@@ -1,6 +1,6 @@
 import express from "express";
 import createHttpError from "http-errors";
-import { applyCache } from "../middleware/cacheMiddleware";
+import cache, { applyCache } from "../middleware/cacheMiddleware";
 
 const moviesRouter = express.Router();
 
@@ -17,7 +17,7 @@ moviesRouter.get("/:movieId", applyCache, async (req, res, next) => {
     }
 
     const data = await response.json();
-
+    cache.set(req.originalUrl, JSON.stringify(data));
     res.json(data);
   } catch (error) {
     next(error);

@@ -1,6 +1,6 @@
 import express from "express";
 import createHttpError from "http-errors";
-import { applyCache } from "../middleware/cacheMiddleware";
+import cache, { applyCache } from "../middleware/cacheMiddleware";
 
 const searchRouter = express.Router();
 
@@ -34,7 +34,7 @@ searchRouter.get("/:title", applyCache, async (req, res, next) => {
         throw createHttpError(400, data.Error);
       }
     }
-
+    cache.set(req.originalUrl, JSON.stringify(data));
     res.status(200).json(data);
   } catch (error) {
     next(error);
