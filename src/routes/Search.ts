@@ -13,7 +13,7 @@ searchRouter.get("/:title", applyCache, async (req, res, next) => {
       throw createHttpError(500, "OMDB_API_KEY is not provided.");
     }
 
-    const url = `${process.env.OMDB_API_KEY}/?s=${title}&apikey=${apiKey}`;
+    const url = `${process.env.omdb_url}/?s=${title}&apikey=${apiKey}`;
     const response = await fetch(url);
 
     if (!response.ok) {
