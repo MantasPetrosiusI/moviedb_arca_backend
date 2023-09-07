@@ -8,16 +8,6 @@ export const badRequestHandler: ErrorRequestHandler = (err, req, res, next) => {
   }
 };
 
-export const genericErrorHandler: ErrorRequestHandler = (
-  err,
-  req,
-  res,
-  next
-) => {
-  console.error(err);
-  res.status(500).send({ message: "We're working to fix this ASAP!" });
-};
-
 export const validationErrorHandler: ErrorRequestHandler = (
   err,
   req,
@@ -29,4 +19,14 @@ export const validationErrorHandler: ErrorRequestHandler = (
   } else {
     next(err);
   }
+};
+
+export const genericErrorHandler: ErrorRequestHandler = (
+  err,
+  req,
+  res,
+  next
+) => {
+  console.error(err);
+  res.status(500).send({ message: "We're working to fix this ASAP!" });
 };
