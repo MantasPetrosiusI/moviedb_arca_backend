@@ -4,6 +4,7 @@ import cors from "cors";
 import {
   badRequestHandler,
   genericErrorHandler,
+  notFoundHandler,
   validationErrorHandler,
 } from "./middleware/errorHandlers";
 import moviesRouter from "./routes/Movies";
@@ -27,11 +28,16 @@ const limiter = rateLimit({
   max: 20,
 });
 
-app.use("/movies", moviesRouter);
 app.use(limiter);
+app.use("/movies", moviesRouter);
 app.use("/search", searchRouter);
 
-app.use(badRequestHandler, genericErrorHandler, validationErrorHandler);
+app.use(
+  badRequestHandler,
+  notFoundHandler,
+  validationErrorHandler,
+  genericErrorHandler
+);
 
 app.listen(port, () => {
   console.table(listEndpoints(app));

@@ -32,5 +32,7 @@ export const validationErrorHandler: ErrorRequestHandler = (
 };
 
 export const notFoundHandler: ErrorRequestHandler = (err, req, res, next) => {
-  res.status(404).send({ message: "Movie not found!" });
+  if (err.status === 404 || (err.name === "NotFoundError" && err.details)) {
+    res.status(404).send({ message: err.message });
+  }
 };
