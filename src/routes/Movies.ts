@@ -13,7 +13,7 @@ moviesRouter.get("/:movieId", applyCache, async (req, res, next) => {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw createHttpError(404, "Movie not found");
+      throw createHttpError(404, "Movie not found!");
     }
 
     const data = await response.json();
