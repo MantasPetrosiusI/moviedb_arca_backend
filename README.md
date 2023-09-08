@@ -112,7 +112,7 @@ Caching is implemented to store search results and movie details temporarily. Th
 
 ## Rate Limiting
 
-Rate limiting middleware is applied to prevent excessive API calls and protect against abuse. It limits the number of requests a client can make within a specified time frame.
+Rate limiting middleware is applied to prevent excessive API calls and protect against abuse. It limits the number of requests to a client can make within a specified time frame. By default it is set to 20 requests per 2 minutes. This can be cahnged in app.ts file.
 
 ## Contributing
 
