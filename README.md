@@ -1,6 +1,6 @@
 # MovieDB Backend
 
-This is the backend server for the [MovieDB](https://github.com/MantasPetrosiusI/moviedb_arca) application. It serves as the intermediary between the frontend and external movie APIs, provides caching for search results and movie details, and implements rate limiting middleware to prevent excessive API calls.
+This is the backend server for the MovieDB application. It serves as the intermediary between the frontend and external movie APIs, provides caching for search results and movie details, and implements rate limiting middleware to prevent excessive API calls.
 
 ## Table of Contents
 
@@ -8,6 +8,9 @@ This is the backend server for the [MovieDB](https://github.com/MantasPetrosiusI
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
+- [OR](#or)
+- [OR](#or-1)
+- [OR](#or-2)
   - [Usage](#usage)
   - [Folder Structure](#folder-structure)
   - [Technologies Used](#technologies-used)
@@ -52,7 +55,11 @@ To set up and run the backend server locally, follow these steps:
 
    ```bash
    npm install
+   ```
+
    # OR
+
+   ```bash
    yarn install
    ```
 
@@ -60,26 +67,24 @@ To set up and run the backend server locally, follow these steps:
 
    ```bash
    npm run build
+   ```
+
    # OR
+
+   ```bash
    yarn build
    ```
 
 5. Start the server:
 
    ```bash
-
-   ```
-
    npm run dev
-
    ```
+
    # OR
-   ```
 
+   ```bash
    yarn start
-
-   ```
-
    ```
 
 The backend server will be running on the specified port (default: 3001).
