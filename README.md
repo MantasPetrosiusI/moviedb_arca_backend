@@ -31,28 +31,43 @@ To set up and run the backend server locally, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/movie-db-backend.git
-   cd movie-db-backend
+   git clone https://github.com/MantasPetrosiusI/moviedb-arca-backend.git
+   cd moviedb-arca-backend
+
+   #OR
+   Clone from the respository
+
+   https://github.com/MantasPetrosiusI/moviedb_arca_backend
    ```
 
-2. Install the project dependencies:
+2. Create a `.env` file in the root directory and add the following configuration:
+
+   ```env
+   PORT=3001  # Specify your desired port number
+   OMDB_API_KEY = [ your_api_key ] #specify your api key
+   omdb_url = ["http://www.omdbapi.com"] #for ease of access
+   ```
+
+3. Install required dependencies:
 
    ```bash
    npm install
    # OR
-   yarn
+   yarn install
    ```
 
-3. Create a `.env` file in the root directory and add the following configuration:
-
-   ```env
-   PORT=3001  # Specify your desired port number
-   ```
-
-4. Start the server:
+4. Build the server:
 
    ```bash
-   npm start
+   npm run build
+   # OR
+   yarn build
+   ```
+
+5. Start the server:
+
+   ```bash
+   npm run dev
    # OR
    yarn start
    ```
