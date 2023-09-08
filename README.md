@@ -67,9 +67,19 @@ To set up and run the backend server locally, follow these steps:
 5. Start the server:
 
    ```bash
+
+   ```
+
    npm run dev
+
+   ```
    # OR
+   ```
+
    yarn start
+
+   ```
+
    ```
 
 The backend server will be running on the specified port (default: 3001).
