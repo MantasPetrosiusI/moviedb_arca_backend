@@ -1,6 +1,6 @@
 # MovieDB Backend
 
-This is the backend server for the MovieDB application. It serves as the intermediary between the frontend and external movie APIs, provides caching for search results and movie details, and implements rate limiting middleware to prevent excessive API calls.
+This is the backend server for the [MovieDB](https://github.com/MantasPetrosiusI/moviedb_arca) application. It serves as the intermediary between the frontend and external movie APIs, provides caching for search results and movie details, and implements rate limiting middleware to prevent excessive API calls.
 
 ## Table of Contents
 
