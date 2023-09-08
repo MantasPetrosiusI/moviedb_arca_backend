@@ -8,9 +8,6 @@ This is the backend server for the MovieDB application. It serves as the interme
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
-- [OR](#or)
-- [OR](#or-1)
-- [OR](#or-2)
   - [Usage](#usage)
   - [Folder Structure](#folder-structure)
   - [Technologies Used](#technologies-used)
@@ -57,8 +54,6 @@ To set up and run the backend server locally, follow these steps:
    npm install
    ```
 
-   # OR
-
    ```bash
    yarn install
    ```
@@ -69,8 +64,6 @@ To set up and run the backend server locally, follow these steps:
    npm run build
    ```
 
-   # OR
-
    ```bash
    yarn build
    ```
@@ -80,8 +73,6 @@ To set up and run the backend server locally, follow these steps:
    ```bash
    npm run dev
    ```
-
-   # OR
 
    ```bash
    yarn start
