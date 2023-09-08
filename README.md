@@ -71,7 +71,7 @@ To set up and run the backend server locally, follow these steps:
 5. Start the server:
 
    ```bash
-   npm run dev
+   npm start
    ```
 
    ```bash
