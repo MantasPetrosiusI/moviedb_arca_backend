@@ -34,7 +34,7 @@ To set up and run the backend server locally, follow these steps:
    git clone https://github.com/MantasPetrosiusI/moviedb-arca-backend.git
    cd moviedb-arca-backend
 
-   #OR
+   # OR
    Clone from the respository
 
    https://github.com/MantasPetrosiusI/moviedb_arca_backend
